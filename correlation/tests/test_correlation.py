@@ -22,12 +22,12 @@ import mock
 
 from ikats.core.resource.client import TemporalDataMgr
 from ikats.core.resource.client.temporal_data_mgr import DTYPE
-from ikats.algo.op-correlation import pearson_correlation_matrix, ccf
+from ikats.algo.correlation import pearson_correlation_matrix, ccf
 # noinspection PyProtectedMember
-from ikats.algo.op-correlation import spark_ccf, _ccf
+from ikats.algo.correlation import spark_ccf, _ccf
 import numpy as np
 
-LOGGER = logging.getLogger("ikats.algo.op-correlation")
+LOGGER = logging.getLogger("ikats.algo.correlation")
 # Log format
 LOGGER.setLevel(logging.DEBUG)
 FORMATTER = logging.Formatter('%(asctime)s:%(levelname)s:%(funcName)s:%(message)s')
