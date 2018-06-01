@@ -13,9 +13,9 @@
     "entry_point": "ikats.algo.core.correlation.loop::correlation_ts_loop",
     "inputs": [
       {
-        "name": "ts_list",
-        "label": "TS list",
-        "description": "The timeseries selection",
+        "name": "dataset name",
+        "label": "DSname",
+        "description": "The dataset on which correlation is computed",
         "type": "ts_list"
       }
     ],
