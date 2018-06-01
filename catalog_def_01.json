@@ -10,7 +10,7 @@
     "label": "Correlate ts loop",
     "description": "Computes the correlations between timeseries selected by observed contexts. The observed contexts are defined by the ContextIdent parameter. Example of context: a travel by car.",
     "algorithm": "algo_correlation_ts",
-    "entry_point": "ikats.algo.core.correlation.loop::correlation_ts_loop",
+    "entry_point": "op-correlation.loop::correlation_ts_loop",
     "inputs": [
       {
         "name": "ts_list",
