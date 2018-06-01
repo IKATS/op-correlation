@@ -28,7 +28,7 @@ from ikats.core.resource.interface import ResourceLocator
 from natsort.natsort import natsorted
 from scipy.stats.stats import pearsonr
 
-from ikats.algo.core.correlation.data import CorrelationDataset, \
+from ikats.algo.op-correlation.data import CorrelationDataset, \
     CorrelationsBycontext, get_triangular_matrix
 import numpy as np
 
@@ -520,7 +520,7 @@ def correlation_ts_list_loop(ts_list,
         1. creates and saves low-level results CorrelationsByContext into IKATS database, as JSON content.
 
           .. seealso:: the JSON is described in the
-            ikats.algo.core.correlation.data.CorrelationDataset::get_json_friendly_dict()
+            ikats.algo.op-correlation.data.CorrelationDataset::get_json_friendly_dict()
 
         2. returns **'aggregated correlation'** cells providing
 
@@ -575,7 +575,7 @@ def correlation_ts_list_loop(ts_list,
       - Matrix of references to the JSON content of CorrelationByContext (see step 5)
 
       .. seealso:: detailed JSON structure in
-        ikats.algo.core.correlation.data.CorrelationDataset::get_json_friendly_dict()
+        ikats.algo.op-correlation.data.CorrelationDataset::get_json_friendly_dict()
 
     :rtype: dict as json-friendly structure for json library
     :raise exception: IkatsException when an error occurred while processing the correlations.

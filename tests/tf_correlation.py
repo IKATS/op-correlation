@@ -18,7 +18,7 @@ import time
 
 from ikats.core.resource.client import NonTemporalDataMgr
 from ikats.core.resource.client import TemporalDataMgr
-from ikats.algo.core.correlation import pearson_correlation_matrix
+from ikats.algo.op-correlation import pearson_correlation_matrix
 
 
 def main_test():
