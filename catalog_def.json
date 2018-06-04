@@ -42,7 +42,7 @@
     "outputs": [
       {
         "name": "result",
-        "label": "result",
+        "label": "Result",
         "description": "Result including the correlation matrix. If there are more than one context: the matrix items are aggregated by Mean. Also provided: matrix of links to each computed correlation result.",
         "type": "correlation_dataset"
       }
