@@ -15,7 +15,7 @@ limitations under the License.
 
 """
 from unittest.case import TestCase
-from ikats.algo.core.correlation.data import is_triangular_matrix
+from ikats.algo.correlation.data import is_triangular_matrix
 
 
 class TestCorrelationDataset(TestCase):
