@@ -28,8 +28,8 @@ from ikats.core.resource.api import IkatsApi
 from ikats.core.resource.client.temporal_data_mgr import DTYPE
 from ikats.core.resource.interface import ResourceLocator
 
-from ikats.algo.core.correlation import loop
-from ikats.algo.core.correlation.data import is_triangular_matrix, get_triangular_matrix
+from ikats.algo.correlation import loop
+from ikats.algo.correlation.data import is_triangular_matrix, get_triangular_matrix
 import numpy as np
 
 # Context to use for every test
