@@ -1,51 +1,43 @@
-[
-  {
-    "name": "algo_correlation_ts",
-    "label": "Correlations on a TS selection",
-    "description": "Computes correlations on a TS selection.",
-    "family": "Stats__TS_Correlation_Computation"
-  },
-  {
-    "name": "correlation_ts_loop",
-    "label": "Correlate ts loop",
-    "description": "Computes the correlations between timeseries selected by observed contexts. The observed contexts are defined by the ContextIdent parameter. Example of context: a travel by car.",
-    "algorithm": "algo_correlation_ts",
-    "entry_point": "op-correlation.loop::correlation_ts_loop",
-    "inputs": [
-      {
-        "name": "dataset name",
-        "label": "DSname",
-        "description": "The dataset on which correlation is computed",
-        "type": "ts_list"
-      }
-    ],
-    "parameters": [
-      {
-        "name": "corr_method",
-        "label": "Method",
-        "description": "The method computing the correlation between 2 timeseries. Choose Pearson to apply the pearson correlation.",
-        "type": "list",
-        "domain": [
-          "Pearson"
-        ],
-        "default_value": "Pearson"
-      },
-      {
-        "name": "context_name",
-        "label": "Group by",
-        "description": "Name of the metadata identifying each observed context, where correlations are computed. For example: timeseries captured from a car, could be observed during a specific travel - the observed context.",
-        "type": "text",
-        "domain": null,
-        "default_value": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "result",
-        "label": "Result",
-        "description": "Result including the correlation matrix. If there are more than one context: the matrix items are aggregated by Mean. Also provided: matrix of links to each computed correlation result.",
-        "type": "correlation_dataset"
-      }
-    ]
-  }
-]
+{
+  "name": "correlation_ts_loop",
+  "label": "Correlate ts loop",
+  "description": "Computes the correlations between timeseries selected by observed contexts. The observed contexts are defined by the ContextIdent parameter. Example of context: a travel by car.",
+  "family": "Stats__TS_Correlation_Computation",
+  "entry_point": "op-correlation.loop::correlation_ts_loop",
+  "inputs": [
+    {
+      "name": "dataset name",
+      "label": "DSname",
+      "description": "The dataset on which correlation is computed",
+      "type": "ts_list"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "corr_method",
+      "label": "Method",
+      "description": "The method computing the correlation between 2 timeseries. Choose Pearson to apply the pearson correlation.",
+      "type": "list",
+      "domain": [
+        "Pearson"
+      ],
+      "default_value": "Pearson"
+    },
+    {
+      "name": "context_name",
+      "label": "Group by",
+      "description": "Name of the metadata identifying each observed context, where correlations are computed. For example: timeseries captured from a car, could be observed during a specific travel - the observed context.",
+      "type": "text",
+      "domain": null,
+      "default_value": null
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "label": "Result",
+      "description": "Result including the correlation matrix. If there are more than one context: the matrix items are aggregated by Mean. Also provided: matrix of links to each computed correlation result.",
+      "type": "correlation_dataset"
+    }
+  ]
+}
