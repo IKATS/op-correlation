@@ -18,9 +18,7 @@
       "label": "Method",
       "description": "The method computing the correlation between 2 timeseries. Choose Pearson to apply the pearson correlation.",
       "type": "list",
-      "domain": [
-        "Pearson"
-      ],
+      "domain": "['Pearson']",
       "default_value": "Pearson"
     },
     {
