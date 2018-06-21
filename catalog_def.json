@@ -27,9 +27,7 @@
       "name": "context_name",
       "label": "Group by",
       "description": "Name of the metadata identifying each observed context, where correlations are computed. For example: timeseries captured from a car, could be observed during a specific travel - the observed context.",
-      "type": "text",
-      "domain": null,
-      "default_value": null
+      "type": "text"
     }
   ],
   "outputs": [
