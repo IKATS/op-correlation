@@ -3,7 +3,7 @@
   "label": "Correlate ts loop",
   "description": "Computes the correlations between timeseries selected by observed contexts. The observed contexts are defined by the ContextIdent parameter. Example of context: a travel by car.",
   "family": "Stats__TS_Correlation_Computation",
-  "entry_point": "op-correlation.loop::correlation_ts_loop",
+  "entry_point": "correlation.loop::correlation_ts_loop",
   "inputs": [
     {
       "name": "dataset name",
